@@ -54,7 +54,8 @@ public class MyStory extends Scene{
   * Wasnt able to use for loops since indexes in the 2D arrays did not line up causing the text and images not to be alined 
   */
   public void drawImages(){
-  
+
+    playSound("boom_x.wav");
     clear("blue");
     setTextColor("black");
     setTextStyle(Font.SANS, FontStyle.BOLD);
@@ -187,6 +188,7 @@ public class MyStory extends Scene{
     drawImage(images[1][3], 0, 0, 400);
     pause(1);
 
+    playSound("applause2_x.wav");
     clear("blue");
     setTextColor("black");
     setTextStyle(Font.SANS, FontStyle.BOLD);
